@@ -1,4 +1,8 @@
-# puzzle taken from https://sudoku.com/hard/
+from timeit import default_timer as timer
+
+
+# known as the 'world's hardest sudoku problem'
+# created by Finnish mathematician Arto Inkala
 sudoku_grid = [
             [8, 0, 0, 0, 0, 0, 0, 0, 0], 
             [0, 0, 3, 6, 0, 0, 0, 0, 0], 
@@ -13,8 +17,6 @@ sudoku_grid = [
 
 def printGrid(sudoku_grid):
 
-    print('\n\n\n\n')
-
     for row in range(len(sudoku_grid)):
         if row % 3 == 0 and row != 0:
             print('- - - - - - - - - - - - - - -') # print horizontal lines every 3 rows
@@ -27,6 +29,8 @@ def printGrid(sudoku_grid):
                 print(sudoku_grid[row][col]) # goes down to next row if it reaches the end of a row
             else:
                 print(str(sudoku_grid[row][col]) + "  ", end="") 
+
+    print('\n')
 
 
 # finds empty cells to put numbers in
@@ -84,10 +88,17 @@ def solveSudokuGrid(sudoku_grid):
             
             # resets last-entered element to 0 if no number was valid
             sudoku_grid[i][j] = 0
-        
+    
     return False
 
-printGrid(sudoku_grid)
-solveSudokuGrid(sudoku_grid)
+
 printGrid(sudoku_grid)
 
+start = timer()
+solveSudokuGrid(sudoku_grid)
+end = timer()
+
+execution_time = round(end - start, 3)
+
+printGrid(sudoku_grid)
+print(f"Execution time: {execution_time}\n")
