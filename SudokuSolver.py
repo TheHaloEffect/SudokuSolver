@@ -17,6 +17,8 @@ sudoku_grid = [
 
 def printGrid(sudoku_grid):
 
+    print('\n')
+
     for row in range(len(sudoku_grid)):
         if row % 3 == 0 and row != 0:
             print('- - - - - - - - - - - - - - -') # print horizontal lines every 3 rows
@@ -101,4 +103,4 @@ end = timer()
 execution_time = round(end - start, 3)
 
 printGrid(sudoku_grid)
-print(f"Execution time: {execution_time}\n")
+print(f'Execution time: {execution_time}\n')
