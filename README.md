@@ -13,17 +13,17 @@ Tried this out with what's known as the 'world's hardest sudoko', created by Fin
 # Sudoku Rules
 Sudoku is a logic-based number puzzle where you fill in numbers on a 9x9 grid. However, each number you fill in must not already be in the same row, column or 3x3 block.
 
-<img src="https://www.sudokukingdom.com/images/rules1.jpg" alt="Sudoku Rules">
+<img src="https://www.sudokukingdom.com/images/rules1.jpg" alt="Sudoku Rules" width="350" height="350">
 
 # Screenshots
 <h3>'World's Hardest Sudoku'</h3>
-<img src="https://preview.telegraph.co.uk/multimedia/archive/02260/Untitled-1_2260717b.jpg" alt="World's hardest sudoku">
+<img src="https://preview.telegraph.co.uk/multimedia/archive/02260/Untitled-1_2260717b.jpg" alt="World's hardest sudoku" width="400" height="350">
 
 <h3>Sudoku Solution</h3>
-<img src="Screenshots/sudoku_solution.PNG" alt="Sudoku solution">
+<img src="Screenshots/sudoku_solution.PNG" alt="Sudoku solution" width="300" height="300">
 
 <h3>The Actual Solution</h3>
-<img src="http://preview.telegraph.co.uk/multimedia/archive/02260/Untitled-1_2260725b.jpg">
+<img src="http://preview.telegraph.co.uk/multimedia/archive/02260/Untitled-1_2260725b.jpg" width="350" height="350">
 
-<h3>Checking Number Validity</h3>
-<img src="Screenshots/check_valid.PNG" alt="Check valid code">
+<h3>Code for Validating Numbers</h3>
+<img src="Screenshots/check_valid.PNG" alt="Check valid code" width="550" height="450">
